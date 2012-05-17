@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+<t t-name="ExportTreeView-templates">
+    <!-- <select name="template">
+        <t t-foreach="templates" t-as="template">
+            <t t-if="selected_template === template">
+                <option t-att-value="template" selected="true">
+                    <t t-esc="template"/></option>
+            </t>
+            <t t-if="selected_template !== template">
+                <option t-att-value="template"><t t-esc="template"/></option>
+            </t>
+        </t>
+    </select> -->
+    <span>eccolo</span>
+</t>
+
+
+<table t-extend="ExportTreeView">
+  <t t-jquery="table > tr:first" t-operation="after">
+    <tr>
+        <td class="oe_feeds_on_right" style="border-left: 1px dashed #666;">
+            <h3>Feeds are refreshed every 60 seconds</h3>
+        </td>
+    </tr>
+  </t>
+</table>
+</templates>
