@@ -9,6 +9,9 @@
     'website': '',
     'license': 'AGPL-3',
     'depends': ['web'],
+    'external_dependencies' : {
+        'python' : ['xlwt'],
+     }
     'data': [],
     'active': False,
     'installable': True,
