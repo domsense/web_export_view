@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Advanced',
+    'name': 'Export Current View',
     'version': '1.0',
     'category': 'Web',
-    'description': """""",
+    'description': """ Adds a link in the right toolbar 
+    for exporting current view (tree type only ATM) to XLS.
+    """,
     'author': 'Simone Orsi - Domsense (simone.orsi@domsense.com)',
     'website': '',
     'license': 'AGPL-3',
@@ -14,16 +16,9 @@
      },
     'data': [],
     'active': False,
-    'installable': True,
-    'web':True,
-    'css': [
-        'static/css/web_advanced_export.css',
-    ],
+    'auto_install': False,
     'js': [
         'static/js/web_advanced_export.js',
-    ],
-    'xml': [
-        'static/xml/web_advanced_export.xml',
     ],
 }
 

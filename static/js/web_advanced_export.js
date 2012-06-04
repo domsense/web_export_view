@@ -7,6 +7,10 @@ openerp.web_advanced_export = function(openerp) {
     openerp.web.Sidebar = openerp.web.Sidebar.extend({
 
         add_default_sections: function() {
+            // IMHO sections should be registered objects
+            // as views and retrieved using a specific registry
+            // so that we don't have to override this
+            
             var self = this,
             view = this.widget_parent,
             view_manager = view.widget_parent,
@@ -53,7 +57,7 @@ openerp.web_advanced_export = function(openerp) {
             export_rows = [];
             $.each(rows,function(){
                 $row = $(this);
-                // find rows with data
+                // find only rows with data
                 if($row.attr('data-id')){
                     export_row = [];
                     $.each(export_columns_keys,function(){
