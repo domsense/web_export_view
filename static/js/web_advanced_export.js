@@ -1,6 +1,6 @@
-//  @@@ web_advanced_export custom JS @@@
+//  @@@ web_export_view custom JS @@@
 
-openerp.web_advanced_export = function(openerp) {
+openerp.web_export_view = function(openerp) {
 
     _t = openerp.web._t;
 
